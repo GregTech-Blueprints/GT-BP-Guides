@@ -2,6 +2,9 @@
 date: 2025-10-02
 tiers: ['MV']
 mods: ['Witchery']
+author: "faltsolph"
+pack_version: "2.7.4"
+image: ""
 ---
 # Potion brewing - Shifting Seasons
 Witchery is an interesting magic mod which can be hard to navigate because by the mod design, the internal documentation is esoteric and doesn’t tell you everything that you might want to know. But that doesn’t change the fact that this mod can be really useful, most notably for its biome changing tool : the shifting season potion or ritual.

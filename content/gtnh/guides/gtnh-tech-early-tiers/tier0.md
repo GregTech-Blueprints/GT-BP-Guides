@@ -2,6 +2,8 @@
 date: 2025-10-15
 tiers: ['Stone Age']
 mods: ['Gregtech']
+author: "nigeltrc72"
+pack_version: "2.8.0"
 image: ""
 ---
 # Tier 0: Stone age

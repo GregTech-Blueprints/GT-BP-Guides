@@ -2,9 +2,9 @@
 date: 2025-01-01
 tiers: ['Stone Age']
 mods: ['Gregtech']
-image: ""
-author: "Test author"
+author: "nigeltrc72"
 pack_version: "2.7.4"
+image: ""
 ---
 # Tier -1: And So, It Begins
 
