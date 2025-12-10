@@ -2,6 +2,9 @@
 date: 2025-10-13
 tiers: ['MV']
 mods: ['Witchery']
+author: "faltsolph"
+pack_version: "2.7.4"
+image: ""
 ---
 # Witchery Bosses
 

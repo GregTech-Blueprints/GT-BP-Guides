@@ -2,6 +2,9 @@
 date: 2025-10-02
 tiers: ['LV']
 mods: ['Gregtech', 'Tinkers Construct', 'Thaumcraft', 'Twilight Forest']
+author: "RandomPotato10"
+pack_version: "2.7.4"
+image: ""
 ---
 # Unbreakable Insta-Mine Hammer in LV
 
