@@ -36,7 +36,24 @@ There is a simple quest in the quest book which explains how to make your starte
 
 ![Moss Quest Reward](/img/gtnh/guides/player-gear/ultimate-tinkers-crossbow/03.png)
 
-We will cover other modifiers for the bow and bolts at the end of the guide.
+## Modifiers
+Modifiers for the crossbow are a very simple endeavour as your goals are very straightforward. You want to shoot fast, get lots of loot, never run out of ammo, and do as much damage as possible.
+
+Each of these things will be dealt with by adding a different modifier to your tools.
+
+### Crossbow:
+Redstone – Applied to the crossbow to bring the draw speed down to 0.25 seconds. Adding more Redstone beyond this will do nothing. You need a maximum of 250 Redstone (5 modifiers worth) to achieve this draw speed with your forever limbs.
+
+Lapis – This will add luck to your crossbow. Luck is the same as the looting enchantment and goes up to Luck 3. This requires 450 lapis and only takes up 1 modifier slot.
+
+Reinforcement – If you end up with more than 6 modifiers on your crossbow, you may as well start working on making it unbreakable. Your tool will already have Reinforced 4 because of the unstable tough binding so you only need 6 reinforcement modifiers to make the bow unbreakable. The reinforcement upgrade is crafted by either casting steel onto an obsidian large plate or doing the same thing in a fluid solidifier.
+
+There is no benefit to adding quartz to your crossbow. This will only add to the melee damage that it does and that is entirely pointless.
+
+### Bolts:
+Moss – This will make your ammo regenerate over time. I have never felt the need to add more than one to my bolts but if you are impatient in the early game and have the Thaumcraft research, adding 2 will make it regen faster.
+
+Quartz – This is a sharpness upgrade for the bolts. The more you add, the more damage they will do. Once you are satisfied with the regen speed of the bolts, just add more quartz every time a modifier slot pops up.
 
 ## Steam Age Upgrades
 There are already upgrades you can make to your crossbow in steam age if you feel you want the additional damage! Remember that your crossbow needs to be full durability and your bolts need to have full ammo to be able to swap parts.
@@ -46,9 +63,9 @@ There are already upgrades you can make to your crossbow in steam age if you fee
 - Blue Slime Cystal Body
 - Fiery Bowstring
 
-Blue slime can be obtained either when the leaves of a slime true decay or by using the blue slime fluid found on slime island. As you are likely to be farming slime and rubber from slime trees anyway, blue slime should be an easy once to obtain.
+Blue slime can be obtained either when the leaves of a slime true decay or by using the blue slime fluid found on slime island. As you are likely to be farming slime and rubber from slime trees anyway, blue slime should be an easy one to obtain.
 
-> Note that you need to make blue slime crystals before the parts can be made and added to your tools. 
+> Note that the parts need to be made from blue Slime Crystals, not the blue slime balls. Make sure you grab enough to make as many of the crystals as you need.
 
 There are also green slime crystals available, and they can also be used for tinkers tools but the 2 are NOT interchangeable. Blue slime crystal parts are vastly superior.
 
@@ -72,7 +89,7 @@ If you made all the upgrades to the Crossbow from the Steam section, the LV sect
 - Carbon Limb (Extruder needed)
 - Unstable Tough Binding (Extruder needed)
 
-The Carbon limb is a good upgrade as it lowers the draw speed of your crossbow and allowing for higher DPS.
+The Carbon limb is a good upgrade as it lowers the draw speed of your crossbow and allowing for higher DPS. This does however significantly lower the durability of the crossbow and I recommed carrying some carbon ingots with you for long journeys. They can be used for repairs. 
 
 If you have been following the guide for the Unbreakable Instamine Hammer in LV, you will already have the unstable ingots needed for the tough binding. If not this upgrade is extremely optional as the only thing it does is add a level of reinforcement above obsidian. If you feel that you must have this upgrade but don’t yet have unstable ingots you will need to find an enchanting table and a division sigil. Both of these can be found in lootgames or alternatively the table can be looted from a wizard tower roguelike dungeon.
 
@@ -119,22 +136,3 @@ Upgrade to these materials for the tip of the bolt whenever you unlock them.
 - Adamantium – LuV
 
 > Remember that you can’t just swap out the tip for crossbow bolts. You will have to fluid solidify with a tool rod every time. Keep using an energetic alloy tool rod until you have access to Osmiridium and then swap to that. If you are still upgrading your crossbow in UHV, you can swap to an Infinity tool rod. Do you want to one shot God??
-
-## Modifiers
-The final part of this guide will cover the modifiers that you want on your crossbow and bolts. This is a very simple endeavour as your goals are straightforward. You want to shoot fast, get as much loot as possible, never run out of ammo, and do as much damage as possible.
-
-Each of these things will be dealt with by adding a different modifier to your tools.
-
-### Crossbow:
-Redstone – Applied to the crossbow to bring the draw speed down to 0.25 seconds. Adding more Redstone beyond this will do nothing. You need a maximum of 250 Redstone (5 modifiers worth) to achieve this draw speed with your forever limbs.
-
-Lapis – This will add luck to your crossbow. Luck is the same as the looting enchantment and goes up to Luck 3. This requires 450 lapis and only takes up 1 modifier slot.
-
-Reinforcement – If you end up with more than 6 modifiers on your crossbow, you may as well start working on making it unbreakable. Your tool will already have Reinforced 4 because of the unstable tough binding so you only need 6 reinforcement modifiers to make the bow unbreakable. The reinforcement upgrade is crafted by either casting steel onto an obsidian large plate or doing the same thing in a fluid solidifier.
-
-There is no benefit to adding quartz to your crossbow. This will only add to the melee damage that it does and that is entirely pointless.
-
-### Bolts:
-Moss – This will make your ammo regenerate over time. I have never felt the need to add more than one to my bolts but if you are impatient in the early game and have the Thaumcraft research, adding 2 will make it regen faster.
-
-Quartz – This is a sharpness upgrade for the bolts. The more you add, the more damage they will do. Once you are satisfied with the regen speed of the bolts, just add more quartz every time a modifier slot pops up.
