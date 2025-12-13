@@ -2,7 +2,7 @@
 date: 2025-12-13
 tiers: ['EV', 'IV']
 mods: ['Blood Magic']
-author: "goldenscruff"
+author: "SeanSilva"
 pack_version: 2.8.1
 image: 
 ---
