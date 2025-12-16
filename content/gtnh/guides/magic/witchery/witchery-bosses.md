@@ -271,7 +271,7 @@ Summoning a demon only need a 15x15 red circle ritual and a couple of items. The
 ![image alt text](/img/gtnh/guides/magic/witchery/witchery-bosses/refined_evil.png)
 ![image alt text](/img/gtnh/guides/magic/witchery/witchery-bosses/ritual_charging.png)
 
-The actual summoning of the demon is the same as any other ritual but beware that they are aggressive and will attack you on sight, sending exploding flaming balls. Unfortunately you can't actually soul vial them or move them with golden lasso. For your first summoning, just focus on killing it quickly and hope for a demon heart.
+The actual summoning of the demon is the same as any other ritual but beware that they are aggressive and will attack you on sight, sending exploding flaming balls. Unfortunately you can't actually soul vial them or move them with golden lasso. For your first summoning, just focus on killing it quickly and hope for a demon heart. (As of 2.8 a [change](https://github.com/GTNewHorizons/Hodgepodge/pull/614) was made so you can now soul vial demon's which means you can EEC it with an arthana to get loads of demon hearts)
 
 ![image alt text](/img/gtnh/guides/magic/witchery/witchery-bosses/demon.png)
 ![image alt text](/img/gtnh/guides/magic/witchery/witchery-bosses/demon_loot.png)
