@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "markdownlint": "^0.40.0"
+  },
+  "type": "module"
+}

@@ -1,8 +1,0 @@
-default: false
-
-GTBP01: true # valid tier
-GTBP02: true # has author
-GTBP03: true # has mods
-GTBP04: true # has pack version
-GTBP05: true # valid image path
-
