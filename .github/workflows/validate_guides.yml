@@ -1,0 +1,63 @@
+name: Validate Guide
+on:
+  pull_request:
+    branches: master
+    paths: content/gtnh/guides/**
+jobs:
+  run_lint:
+    name: Run Lint
+    runs-on: ubuntu-slim
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Ensures we have the full history for diff
+      - name: Get changed files
+        id: changes
+        run: |
+          git fetch origin ${{ github.base_ref }}
+          echo "changed<<EOF" >> $GITHUB_OUTPUT
+          echo $(git diff --name-only origin/${{ github.base_ref }}...HEAD | grep 'content/' | sed 's/.*/"&"/' | xargs -d '\n' ) >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Install Dependencies
+        run: |
+          cd lint
+          npm i
+
+      - name: Run lint
+        id: lint
+        continue-on-error: true
+        run: |
+          echo "errors<<EOF" >> $GITHUB_OUTPUT
+          node lint/index.js ${{ steps.changes.outputs.changed }} >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+      - name: Process Results
+        id: process
+        run: |
+          echo "${{ steps.lint.outputs.errors }}" >> errors.txt
+          cat errors.txt
+          if [[ $(cat errors.txt | wc -w) -ne 0 ]]; then
+            echo "message<<EOF" >> $GITHUB_OUTPUT
+            echo "💥 **HV to MV, yes.**" >> $GITHUB_OUTPUT
+            echo "" >> $GITHUB_OUTPUT
+            echo "The following errors were reported:" >> $GITHUB_OUTPUT
+            echo "${{ steps.lint.outputs.errors }}" >> $GITHUB_OUTPUT
+            echo 'EOF' >> $GITHUB_OUTPUT
+            exit 1
+          else
+            echo "message<<EOF" >> $GITHUB_OUTPUT
+            echo "✅ **There were no deaths, no skill issues, not a single problem.**" >> $GITHUB_OUTPUT
+            echo "" >> $GITHUB_OUTPUT
+            echo "No errors reported for the guide" >> $GITHUB_OUTPUT
+            echo 'EOF' >> $GITHUB_OUTPUT
+          fi
+      - name: Publish to PR
+        if: always()
+        uses: mshick/add-pr-comment@v2
+        with:
+          message: ${{ steps.process.outputs.message}}
+          refresh-message-position: true
+
