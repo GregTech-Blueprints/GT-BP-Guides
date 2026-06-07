@@ -54,6 +54,7 @@ Our desired outcome here is a Meadows Princess/Drone combination with both Longe
 ----------
 
 ![img alt text](../../../../public/img/gtnh/guides/bees/manual-statting/03.png)
+
 ![img alt text](../../../../public/img/gtnh/guides/bees/manual-statting/04.png)
 ![img alt text](../../../../public/img/gtnh/guides/bees/manual-statting/05.png)
 
@@ -62,6 +63,7 @@ Since we're aiming for three traits we're on a scale from 0 to 6.  As you can se
 ----------
 
 ![img alt text](../../../../public/img/gtnh/guides/bees/manual-statting/06.png)
+
 ![img alt text](../../../../public/img/gtnh/guides/bees/manual-statting/07.png)
 ![img alt text](../../../../public/img/gtnh/guides/bees/manual-statting/08.png)
 
@@ -70,6 +72,7 @@ This time we've gotten a +5 princess, a +2 drone, and a +2 drone.  These are qui
 ----------
 
 ![img alt text](../../../../public/img/gtnh/guides/bees/manual-statting/09.png)
+
 ![img alt text](../../../../public/img/gtnh/guides/bees/manual-statting/10.png)
 ![img alt text](../../../../public/img/gtnh/guides/bees/manual-statting/11.png)
 
@@ -78,6 +81,7 @@ Round three has yielded a +4 princess, +3 drone, and +4 drone.  It is a little c
 ----------
 
 ![img alt text](/img/gtnh/guides/bees/manual-statting/12.png)
+
 ![img alt text](/img/gtnh/guides/bees/manual-statting/13.png)
 ![img alt text](/img/gtnh/guides/bees/manual-statting/14.png)
 
@@ -101,6 +105,7 @@ The next several rounds went:
 ----------
 
 ![img alt text](../../../../public/img/gtnh/guides/bees/manual-statting/15.png)
+
 ![img alt text](../../../../public/img/gtnh/guides/bees/manual-statting/16.png)
 ![img alt text](../../../../public/img/gtnh/guides/bees/manual-statting/17.png)
 
