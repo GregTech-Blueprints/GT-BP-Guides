@@ -25,5 +25,20 @@ Each bee has 14 different stats each with an active and inactive version for a p
 
 Now that we know what genes the bees have, we can start manipulating them to suit our needs.  Before we go blindly changing the genes, let's first get an idea of why we might want to do this.
 
-##Single gene manipulation: purebred species.
+### Single gene manipulation: purebred species.
+
+Just bred a new species of bee, but didn't get quest credit?  This means that the bee's species isn't pure, which is to say the Active and Inactive species don't match.  Analyze the drones you have counting up the desireable traits each drone has and adding them up.
+
+The drone could have:
+- The desired species as both the active and inactive gene (+2)
+- The desired species as the active gene and an unwanted species as the inactive gene (+1)
+- An unwanted species as both the active and inactive gene (+0).
+
+Now analyze the princess and apply the same math and combine them as follows:
+- Princess +2 with Drone +2.  You're done! You have both a princess and drone with a pure species.
+- Princess +1 with Drone +2.  This is valid, but if you have a +2 drone and a +1 drone, consider saving the +2 drone for when you get a +2 princess.
+- Princess +1 with Drone +1.  The most common scenario.  I have no hard proof, but it _feels_ like combining bees with the desirable trait on the same side (active/inactive) is less likely to give the desired outcome. If possible combine a princess and drone with the desired trade on oppisite sides.
+- Princess +1 with Drone +0.  Danger danger. Cross your fingers and hope for a +1 princess and +1 drone
+- Princess +0 with Drone +1.  Even more danger.  Good luck!
+- Princess +0 with Drone +0.  You didn't really think this would do anything did you?
 
