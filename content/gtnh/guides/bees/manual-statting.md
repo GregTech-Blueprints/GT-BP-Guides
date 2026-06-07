@@ -46,8 +46,8 @@ Now analyze the princess and apply the same math and combine them as follows:
 
 Now that we have some experience with a single gene, let's move on to something a little more complicated.  You maybe have heard people talking about something called a "breeder bee", well now you can create one for yourself!  A breeder bee is simply a bee with many desirable traits that we keep available to combine with new species before moving them into production hives.  We'll start off simple by adding a desirable trait (Blinding Production) to a bee that already has two desirable traits (Meadows Princess with Longest Lifespan).
 
-(/img/gtnh/guides/bees/manual-statting/01.png)
-(/img/gtnh/guides/bees/manual-statting/02.png)
+!(/img/gtnh/guides/bees/manual-statting/01.png)
+!(/img/gtnh/guides/bees/manual-statting/02.png)
 
 Our desired outcome here is a Meadows Princess/Drone combination with both Longest Lifespan and Blinding Production.  Let's start off by smashing them together and seeing what happens.
 
