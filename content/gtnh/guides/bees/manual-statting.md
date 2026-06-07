@@ -51,3 +51,57 @@ Now that we have some experience with a single gene, let's move on to something 
 
 Our desired outcome here is a Meadows Princess/Drone combination with both Longest Lifespan and Blinding Production.  Let's start off by smashing them together and seeing what happens.
 
+----------
+
+![img alt text](/img/gtnh/guides/bees/manual-statting/03.png)
+![img alt text](/img/gtnh/guides/bees/manual-statting/04.png)
+![img alt text](/img/gtnh/guides/bees/manual-statting/05.png)
+
+Since we're aiming for three traits we're on a scale from 0 to 6.  As you can see we have a +3 princess (1 Meadows Species, 1 Longest Lifspan, and 1 Blinding Production), a +3 drone, and a different +3 drone.  I'm choosing to use the second +3 drone as has the desired species and lifespan trait on the oppisite side of the line from the princess.  Another round of leaving the bees in a box and pretending we don't know what's happening!
+
+----------
+
+![img alt text](/img/gtnh/guides/bees/manual-statting/06.png)
+![img alt text](/img/gtnh/guides/bees/manual-statting/07.png)
+![img alt text](/img/gtnh/guides/bees/manual-statting/08.png)
+
+This time we've gotten a +5 princess, a +2 drone, and a +2 drone.  These are quite disapointing drone options, so I'm going to use the +3 drone that's left over from the previous round.
+
+----------
+
+![img alt text](/img/gtnh/guides/bees/manual-statting/09.png)
+![img alt text](/img/gtnh/guides/bees/manual-statting/10.png)
+![img alt text](/img/gtnh/guides/bees/manual-statting/11.png)
+
+Round three has yielded a +4 princess, +3 drone, and +4 drone.  It is a little concerning that the +4 drone is +0 in lifespan, but since the princess is +2 for lifespan I'm going to proceed with it and hope it will all work out.
+
+----------
+
+![img alt text](/img/gtnh/guides/bees/manual-statting/12.png)
+![img alt text](/img/gtnh/guides/bees/manual-statting/13.png)
+![img alt text](/img/gtnh/guides/bees/manual-statting/14.png)
+
++4 princess, +3 drone, and +4 drone with better distribution this time, it would seem that the minor gamble has paid off.  We proceed with the +4 drone.
+
+----------
+
+The next several rounds went:
+ 
+- +4 princess, +4 drone, +2 drone.  Nothing special, we +4 drone our way ahead.
+- +4 princess, +3 drone, +4 drone.  Next song, same as the first song.
+- +2 princess, +5 drone, +5 drone.  This one was a bit of a hard choice.  I might have gone with the +3 drone from the previous round to save the +5 drone for a better princess, however since we got 2 +5 drones this time we plow ahead.
+- +4 princess, +4 drone, +4 drone.  I'll keep the +4 drones in reserve and use the +5 drone from the previous round.
+- +4 princess, +5 drone, +4 drone.  In this round the princess had a +0 in lifespan, so I elected to use the +4 drone and save the +5.
+- +4 princess, +4 drone, +4 drone.  Since the +5 drone we have in reserve is +2 in species and production, I'm going to attempt to get a princess with +2 in species and prodcution as well, so here I'll proceed with the +4 drone that has a +0 in lifespan.
+- +4 princess, +5 drone, +4 drone.  Success!  All three options are +2 in species and production.  I'm going to trash all drones except the two +5s I have and keep going.  Getting close now!
+- +4 princess, +4 drone, +5 drone.  Chose the +5 drone that had the production trait as active.
+- +5 princess, +5 drone, +4 drone.  Since the princess had the production trait as active, I chose the drone that had it inactive.
+- +6 princess, +4 drone, +5 drone.  Our first +6!  Almost there!
+
+----------
+
+![img alt text](/img/gtnh/guides/bees/manual-statting/15.png)
+![img alt text](/img/gtnh/guides/bees/manual-statting/16.png)
+![img alt text](/img/gtnh/guides/bees/manual-statting/17.png)
+
+And we're done!  You'll notice that we have two different +6 drones. Since we were only focused on lifespan and production we let all the other traits do whatever they wanted.  We can choose desirable ones and continue or just let them do whatever they want until they stabilize.  Either way we want to get a stockpile of drones (at least 8, but up to 64 depending on how patient you feel like being) before moving on to combining the next trait in!  That way if we lose something we can always return to a known good configuration before trying again.
