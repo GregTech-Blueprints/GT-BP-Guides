@@ -9,8 +9,8 @@ const GTBP05 = (params,onError)=>{
     if (token.type === 'content' && /!\[[^\]]*\]\((.*)(?=\"|\))(\".*\")?\)/.test(token.text) ) { 
       // console.log(token.text);
       const imagePath = /!\[[^\]]*\]\((?<filename>.*?)(?=\"|\))(?<optionalpart>\".*\")?\)/.exec(token.text)[1];
-      if(!imagePath.startsWith('img/')){onError({lineNumber: token.startLine, detail: 'local images should start in the img/ directory'}) }
-      if(imagePath.startsWith('img/') && !fs.existsSync(`./public/${imagePath}`)){ onError({lineNumber: token.startLine, detail: `${imagePath} missing from filesystem`})}
+      if(!imagePath.startsWith('img/') && !imagePath.startsWith('/img/')){onError({lineNumber: token.startLine, detail: 'local images should start in the img/ directory'}) }
+      if((imagePath.startsWith('img/') || imagePath.startsWith('/img/')) && !fs.existsSync(`./public/${imagePath}`)){ onError({lineNumber: token.startLine, detail: `${imagePath} missing from filesystem`})}
     }
   });
 }
