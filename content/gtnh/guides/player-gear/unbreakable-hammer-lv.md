@@ -8,8 +8,6 @@ image: ""
 ---
 # Unbreakable Insta-Mine Hammer in LV
 
-## Please note that as of 2.9 the way magical wood behaves has been changed, and it no longer grants free modifiers once the parts are swapped out. The hammer described below can no longer be made in the same way.
-
 Resource gathering in GregTech: New Horizons is no small feat. From the moment you step into the world, you're faced with dense ore generation mechanics, limited tool options, and a slow crawl toward automation. Mining by hand in the early game can be painfully time-consuming. Especially when you're constantly repairing tools and chipping away at entire ore veins deep underground.
 
 That’s what makes this early-game hammer so powerful.
@@ -17,6 +15,8 @@ That’s what makes this early-game hammer so powerful.
 In GTNH, tools are a core part of progression, and getting a reliable, fast mining tool early on can drastically improve efficiency. This guide covers how to build a Tinkers' Construct hammer that is not only unbreakable but also capable of insta-mining stone and similar blocks — all as early as LV (Low Voltage).
 
 ![image alt text](/img/gtnh/guides/player-gear/unbreakable-hammer-lv/01.png)
+
+## Please note that as of 2.9 the way magical wood behaves has been changed, and it no longer grants free modifiers once the parts are swapped out. The hammer described below can no longer be made in the same way.
 
 ## Crafting the Unbreakable Hammer: Infrastructure and Magical Wood Preparation
 Creating this special hammer requires more than just a Tool Forge and some Tinkers’ parts. In GTNH, the path includes Twilight Forest boss progression, Thaumcraft research, and access to early GT machinery. But the payoff is huge: an unbreakable, modifier-rich hammer that can carry you through the manual mining phase with ease.
