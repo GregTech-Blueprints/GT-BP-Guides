@@ -8,6 +8,8 @@ image: ""
 ---
 # Unbreakable Insta-Mine Hammer in LV
 
+## Please note that as of 2.9 the way magical wood behaves has been changed, and it no longer grants free modifiers once the parts are swapped out. The hammer described below can no longer be made in the same way.
+
 Resource gathering in GregTech: New Horizons is no small feat. From the moment you step into the world, you're faced with dense ore generation mechanics, limited tool options, and a slow crawl toward automation. Mining by hand in the early game can be painfully time-consuming. Especially when you're constantly repairing tools and chipping away at entire ore veins deep underground.
 
 That’s what makes this early-game hammer so powerful.
