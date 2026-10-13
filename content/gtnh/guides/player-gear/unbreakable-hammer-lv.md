@@ -16,6 +16,8 @@ In GTNH, tools are a core part of progression, and getting a reliable, fast mini
 
 ![image alt text](/img/gtnh/guides/player-gear/unbreakable-hammer-lv/01.png)
 
+## Please note that as of 2.9 the way magical wood behaves has been changed, and it no longer grants free modifiers once the parts are swapped out. The hammer described below can no longer be made in the same way.
+
 ## Crafting the Unbreakable Hammer: Infrastructure and Magical Wood Preparation
 Creating this special hammer requires more than just a Tool Forge and some Tinkers’ parts. In GTNH, the path includes Twilight Forest boss progression, Thaumcraft research, and access to early GT machinery. But the payoff is huge: an unbreakable, modifier-rich hammer that can carry you through the manual mining phase with ease.
 
