@@ -15,6 +15,10 @@ Welcome to CropsNH!  This mod is one of the standout additions to the pack in 2.
 
 In this first guide in the series we'll be covering all you need to know to get started up to and including getting your very first 31/31/31 seed.  Subsequent guides will cover topics such as pool breeding, deterministic breeding, machine breeding, downstatting, and much more!
 
+For those who prefer the video format, Cat and Vindrake of CatsCozyGames have put together and excellent tutorial video that you can watch below
+::markdown-video{src="https://www.youtube.com/watch?v=bn5eXEXZ45w&t"}
+::
+
 ## Gearing up for some serious farming
 
 ![img alt text](/img/gtnh/guides/crops/getting-started/quest_prereqs.png)
