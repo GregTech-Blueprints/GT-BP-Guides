@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-slim
     permissions:
       pull-requests: write
+      issues: write
     steps:
       - name: Checkout the code
         uses: actions/checkout@v4
