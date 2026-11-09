@@ -1,15 +1,19 @@
 name: Validate Guide
 on:
-  pull_request:
+  pull_request_target: 
     branches: master
     paths: content/gtnh/guides/**
+    types:
+      - opened
+      - synchronize
+permissions: 
+  pull-requests: write
 jobs:
   run_lint:
     name: Run Lint
     runs-on: ubuntu-slim
     permissions:
       pull-requests: write
-      issues: write
     steps:
       - name: Checkout the code
         uses: actions/checkout@v4
