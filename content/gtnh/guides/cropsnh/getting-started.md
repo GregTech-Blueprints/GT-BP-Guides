@@ -1,9 +1,9 @@
 ---
-date: 2026-06-07
+date: 2026-11-09
 tiers: ['Stone Age']
 mods: ['CropsNH']
 author: "mister_nibbles"
-pack_version: "2.9 beta1"
+pack_version: "2.9.0"
 image: ""
 ---
 
@@ -114,7 +114,7 @@ Now get to waiting!  After a short period of time the crosscrop should disappear
 - If you answered yes to both of these questions, we can get rid of the old crop!  With an empty hand left click the original crop, then right click a Crop Stick on to it to create a new crosscrop.  Reapply water as necessary!
 - If you answered no to either of these questions, destroy the new crop and re-create the crosscrop there instead.
 
-At this point it is worth noting that each time a crop spreads to a crosscrop it has a chance to alter each stat by any number between -2 and +4.  This can be improved to between +0 and +4 by applying Fertilizer (or Bone Meal!).  One of our very early goals once we have 31/31/31 seeds will be to get Fertilia, so it wont be in limited supply for long!  If you do apply fertilizer be VERY careful not to break the Crop Stick when left clicking crops away.  As long as the Crop Stick isn't broken the fertilizer will stick around until it's used up!
+At this point it is worth noting that each time a crop spreads to a crosscrop it has a chance to alter each stat by 1 in either direction.  Increasing the parent's fertilization levels to 50 or greater changes this to any number between -2 and 2, and increasing the parent's fertilization levels to 101 or greater (only possible with a crop manager!) changes this to any number between 0 and 4.  One of our very early goals once we have 31/31/31 seeds will be to get Fertilia, so it wont be in limited supply for long!  If you do apply fertilizer be VERY careful not to break the Crop Stick when left clicking crops away.  As long as the Crop Stick isn't broken the fertilizer will stick around until it's used up!
 
 I would also suggest doing two (or even more if you can handle it!) at once.  After Berry, Oak Bonsai Seed is a good second target (you can right click the Oak Saplings I had you collect earlier onto a Crop Stick just like you did with the Berry).  Carrot, Potato, and Sugar Cane are all good tertiary targets after that.
 
