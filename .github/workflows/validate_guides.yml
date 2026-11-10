@@ -1,26 +1,56 @@
 name: Validate Guide
 on:
-  pull_request:
+  pull_request_target: 
     branches: master
     paths: content/gtnh/guides/**
+    types:
+      - opened
+      - synchronize
+permissions:
+  contents: read
+  pull-requests: write
 jobs:
   run_lint:
     name: Run Lint
     runs-on: ubuntu-slim
     permissions:
+      contents: read
+      issues: write
       pull-requests: write
     steps:
-      - name: Checkout the code
+      - name: Checkout trusted base code
         uses: actions/checkout@v4
         with:
+          ref: ${{ github.event.pull_request.base.sha }}
           fetch-depth: 0 # Ensures we have the full history for diff
-      - name: Get changed files
+          persist-credentials: false
+      - name: Fetch changed guide files from the PR
         id: changes
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
         run: |
-          git fetch origin ${{ github.base_ref }}
-          echo "changed<<EOF" >> $GITHUB_OUTPUT
-          echo $(git diff --name-only origin/${{ github.base_ref }}...HEAD | grep 'content/' | sed 's/.*/"&"/' | xargs -d '\n' ) >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
+          set -euo pipefail
+          git fetch --no-tags origin "refs/pull/$PR_NUMBER/head"
+          head_sha=$(git rev-parse FETCH_HEAD)
+          mapfile -d '' changed_files < <(git diff --name-only -z "$BASE_SHA...$head_sha" -- content/gtnh/guides/ public/img/)
+          : > changed-files.txt
+          for file in "${changed_files[@]}"; do
+            case "$file" in
+              content/gtnh/guides/*.md|public/img/*) ;;
+              *) continue ;;
+            esac
+            [[ "$file" != *"/../"* && "$file" != *"/./"* ]] || continue
+            if git cat-file -e "$head_sha:$file" 2>/dev/null; then
+              mkdir -p "$(dirname "$file")"
+              git show "$head_sha:$file" > "$file"
+              if [[ "$file" == content/gtnh/guides/*.md ]]; then
+                printf '%s\n' "$file" >> changed-files.txt
+              fi
+            elif [[ "$file" == public/img/* ]]; then
+              rm -f -- "$file"
+            fi
+          done
 
       - name: Install Dependencies
         run: |
@@ -31,31 +61,39 @@ jobs:
         id: lint
         continue-on-error: true
         run: |
-          echo "errors<<EOF" >> $GITHUB_OUTPUT
-          node lint/index.js ${{ steps.changes.outputs.changed }} >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
+          mapfile -t changed_files < changed-files.txt
+          node lint/index.js "${changed_files[@]}" > errors.txt
       - name: Process Results
         id: process
+        if: always()
+        env:
+          LINT_OUTCOME: ${{ steps.lint.outcome }}
         run: |
-          echo "${{ steps.lint.outputs.errors }}" >> errors.txt
-          cat errors.txt
-          if [[ $(cat errors.txt | wc -w) -ne 0 ]]; then
-            echo "message<<EOF" >> $GITHUB_OUTPUT
-            echo "💥 **HV to MV, yes.**" >> $GITHUB_OUTPUT
-            echo "" >> $GITHUB_OUTPUT
-            echo "The following errors were reported:" >> $GITHUB_OUTPUT
-            echo "${{ steps.lint.outputs.errors }}" >> $GITHUB_OUTPUT
-            echo 'EOF' >> $GITHUB_OUTPUT
+          delimiter="RESULT_$(cat /proc/sys/kernel/random/uuid)"
+          if [[ ! -f changed-files.txt || "$LINT_OUTCOME" != "success" ]]; then
+            echo "Linter did not complete successfully; skipping PR comment."
+            exit 1
+          elif [[ -s errors.txt ]]; then
+            {
+              echo "message<<$delimiter"
+              echo "💥 **HV to MV, yes.**"
+              echo ""
+              echo "The following errors were reported:"
+              cat errors.txt
+              echo "$delimiter"
+            } >> "$GITHUB_OUTPUT"
             exit 1
           else
-            echo "message<<EOF" >> $GITHUB_OUTPUT
-            echo "✅ **There were no deaths, no skill issues, not a single problem.**" >> $GITHUB_OUTPUT
-            echo "" >> $GITHUB_OUTPUT
-            echo "No errors reported for the guide" >> $GITHUB_OUTPUT
-            echo 'EOF' >> $GITHUB_OUTPUT
+            {
+              echo "message<<$delimiter"
+              echo "✅ **There were no deaths, no skill issues, not a single problem.**"
+              echo ""
+              echo "No errors reported for the guide"
+              echo "$delimiter"
+            } >> "$GITHUB_OUTPUT"
           fi
       - name: Publish to PR
-        if: always()
+        if: always() && steps.lint.outcome == 'success' && steps.process.outputs.message != ''
         uses: mshick/add-pr-comment@v2
         with:
           message: ${{ steps.process.outputs.message}}
